@@ -28,7 +28,9 @@ SECRET_KEY = 'django-insecure-ljybm94yw2-v+k0_ful0+g=%$g!+#gh%^0i)72--8kuohgl)g5
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", "False") == "True"
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [
+    "dynamic-portfolio-wjuv.onrender.com",
+]
 
 # Application definition
 
@@ -128,6 +130,7 @@ STATIC_URL = 'static/'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://dynamic-portfolio-frontend-nine.vercel.app",
 ]
 
 REST_FRAMEWORK = {
