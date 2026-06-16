@@ -32,6 +32,8 @@ ALLOWED_HOSTS = [
     "dynamic-portfolio-wjuv.onrender.com",
 ]
 
+
+
 # Application definition
 
 INSTALLED_APPS = [

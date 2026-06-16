@@ -19,9 +19,9 @@ class SkillCategoryAPIView(APIView):
 class ProjectAPIView(APIView):
     def get(self,request):
         project = Project.objects.all()
-        serialaizer = ProjectSerializer(project,many=True)
+        serializer = ProjectSerializer(project,many=True,context={"request": request})
         
-        return Response(serialaizer.data)
+        return Response(serializer.data)
     
 
 class ContactAPIView(APIView):
